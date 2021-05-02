@@ -49,7 +49,7 @@ let seattle = {
    
     let liEl = document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent = this.sumCookies;
+    liEl.textContent =`${ this.sumCookies} cookies`;
     
     }
 }
@@ -98,7 +98,7 @@ let tokyo = {
    
     let liEl = document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent = this.sumCookies;
+    liEl.textContent = `${ this.sumCookies} cookies`;
     
     }
 }
@@ -148,8 +148,7 @@ let dubai = {
    
     let liEl = document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent = this.sumCookies;
-    
+    liEl.textContent = `${ this.sumCookies} cookies`;
     }
 }
 
@@ -197,7 +196,7 @@ let paris = {
    
     let liEl = document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent = this.sumCookies;
+    liEl.textContent = `${ this.sumCookies} cookies`;
     
     }
 }
@@ -246,7 +245,7 @@ let lima = {
    
     let liEl = document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent = this.sumCookies;
+    liEl.textContent = `${ this.sumCookies} cookies`;
     
     }
 }
