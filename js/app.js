@@ -37,7 +37,7 @@ let seattle = {
     for ( let i=0 ; i< this.hourWork.length ;i++ ) 
     {
     this.getCustomernumber(this.minCus,this.maxCus);
-    this.cookies=6.3*this.cusHour;
+    this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
     let liEl = document.createElement('li');
@@ -86,7 +86,7 @@ let tokyo = {
     for ( let i=0 ; i< this.hourWork.length ;i++ ) 
     {
     this.getCustomernumber(this.minCus,this.maxCus);
-    this.cookies=6.3*this.cusHour;
+    this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
     let liEl = document.createElement('li');
@@ -136,7 +136,7 @@ let dubai = {
     for ( let i=0 ; i< this.hourWork.length ;i++ ) 
     {
     this.getCustomernumber(this.minCus,this.maxCus);
-    this.cookies=6.3*this.cusHour;
+    this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
     let liEl = document.createElement('li');
@@ -184,7 +184,7 @@ let paris = {
     for ( let i=0 ; i< this.hourWork.length ;i++ ) 
     {
     this.getCustomernumber(this.minCus,this.maxCus);
-    this.cookies=6.3*this.cusHour;
+    this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
     let liEl = document.createElement('li');
@@ -233,7 +233,7 @@ let lima = {
     for ( let i=0 ; i< this.hourWork.length ;i++ ) 
     {
     this.getCustomernumber(this.minCus,this.maxCus);
-    this.cookies=6.3*this.cusHour;
+    this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
     let liEl = document.createElement('li');
