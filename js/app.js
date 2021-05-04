@@ -2,6 +2,7 @@
 let citiesArray = [];
 let hourWork = [' 6:00am ','7:00am ',' 8:00am ',' 9:00am ',' 10:00am ',' 11:00am ',' 12:00pm ',' 1:00pm ',' 2:00pm ',' 3:00pm ',' 4:00pm ',' 5:00pm ',' 6:00pm ',' 7:00pm '];
 let totalArray=[];
+let total1=0;
 let divEl = document.getElementById('hour');
 let articleEl = document.createElement('article');
 divEl.appendChild(articleEl);
@@ -51,21 +52,17 @@ City.prototype.render=function () {
         tr4.appendChild(td4);
         td4.textContent =` ${this.cookiesHour[i]} `;}   
                 }
-        
-    City.prototype.maketable= function(){
-   }
-
+   
 
 let seattle = new City ('Seattle',23,65,6.3,hourWork);
 seattle.getCustomernumber(23,65);
 seattle.render();
-seattle.maketable();
+//seattle.maketable();
 
 let tokyo = new City ('Tokyo',3,24,1.2,hourWork);
 tokyo.getCustomernumber(3,24);
 tokyo.render();
 //tokyo.maketable();
-
 
 let dubai = new City ('Dubai',11,38,3.7,hourWork);
 dubai.getCustomernumber(11,38);
@@ -82,8 +79,6 @@ let lima = new City ('Lima',2,16,4.6,hourWork);
 lima.getCustomernumber(2,16);
 lima.render();
 //lima.maketable();
-
-
 for ( let i=0; i< citiesArray.length;i++)
     {       let tr1 = document.createElement('tr');
         tablel.appendChild(tr1);
@@ -91,14 +86,30 @@ for ( let i=0; i< citiesArray.length;i++)
               tr1.appendChild(td2);
                td2.textContent =`${citiesArray[i]}` ;
          }
+          function total (){    
+         for (let i=0; i< citiesArray;i++){
+           total1=seattle.cookiesHour[i]+tokyo.cookiesHour+dubai.cookiesHour[i]+paris.cookiesHour[i]+lima.cookiesHour[i] ;
+           push.totalArray[total1];
+           console.log(total1);
+           console.log([totalArray]);
+         }}
+         total();
+    //function total () {
+      //for (let i=0; i<citiesArray;i++){
+      //let total1=seattle.cookiesHour[i]+tokyo.cookiesHour+dubai.cookiesHour[i]+paris.cookiesHour[i]+lima.cookiesHour[i] ;
+      //push.totalArray[total1];
+      //console.log(totalArray[i]);
+
+   //}}
+//total ();
          let tablefooter = document.createElement('tfoot');
          tablel.appendChild(tablefooter);
          let tf1 = document.createElement('tr');
          tablefooter.appendChild(tf1)
          tf1.textContent=`Total`;
-         for (let i=0; i<cookiesHour.length;i++){
-             cookiesHour
-         }
+         //for (let i=0; i<cookiesHour.length;i++){
+             
+         //}
          //for(let i=0; i<totalArray.length;i++){
            //  this.cookiesHour[i]+
             //tf1.textContent= `${totalArray[i]}`;}
@@ -109,4 +120,4 @@ for ( let i=0; i< citiesArray.length;i++)
          //tablel.appendChild(tr3);
          //let td3 = document.createElement('td');
          //tr3.appendChild(td3);
-         //td3.textContent ='Total' `` ;
+         //td3.textContent ='Total' ;
