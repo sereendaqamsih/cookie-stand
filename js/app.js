@@ -101,6 +101,9 @@ let footer = function (){
       td9.textContent=`${finaltotalHour[i]}`;
 
     }
+    let td9=document.createElement('td');
+      tr6.appendChild(td9);
+      td9.textContent=``;
   }
 
       let seattle = new City ('Seattle',23,65,6.3,hourWork);

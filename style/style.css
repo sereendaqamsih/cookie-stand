@@ -30,7 +30,8 @@ li {
   font-size: medium;
   color: tomato;
 }
-table{
-  color: black;
-  border: solid black 5px;
+table,
+td,
+th {
+  border: 1px solid black;
 }
