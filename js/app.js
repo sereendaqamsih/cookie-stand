@@ -59,9 +59,6 @@ City.prototype.sellcookies= function() {
   this.sumCookies=this.cookies+this.sumCookies;
   this.sumCookies1.push(this.sumCookies);
   }
-/*for (let i=0;i<location1.length;i++){
-cookiesHourfinal[i]=this.cookiesHour[i];
-}*/
 
 }
 City.prototype.render= function () { 
@@ -89,21 +86,20 @@ let footer = function (){
    }
    finaltotalHour.push(totalPerhour);
   }
-
-    let tr6 = document.createElement('tr');
-    table1.appendChild(tr6);
-    let td6 =document.createElement('td');
-    tr6.appendChild(td6);
-    td6.textContent= (`Total`);
-    for(let i=0; i<hourWork.length;i++){
+   let tr6 = document.createElement('tr');
+   table1.appendChild(tr6);
+   let td6 =document.createElement('td');
+   tr6.appendChild(td6);
+   td6.textContent= (`Total`);
+   for(let i=0; i<hourWork.length;i++){
       let td9=document.createElement('td');
       tr6.appendChild(td9);
       td9.textContent=`${finaltotalHour[i]}`;
 
     }
-    let td9=document.createElement('td');
-      tr6.appendChild(td9);
-      td9.textContent=``;
+   let td9=document.createElement('td');
+   tr6.appendChild(td9);
+   td9.textContent=``;
   }
 
       let seattle = new City ('Seattle',23,65,6.3,hourWork);
