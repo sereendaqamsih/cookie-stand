@@ -11,6 +11,7 @@ let seattle = {
     cusHour:0,
     cookiesHour: [],
     sumCookies: 0,
+    sumCookies1:[],
     cookies: 0,
     getCustomernumber: function (min, max) {
         min = Math.ceil(min);
@@ -27,7 +28,8 @@ let seattle = {
                 this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
                 this.cookiesHour.push (this.cookies);
                 this.sumCookies=this.cookies+this.sumCookies;
-            
+                this.sumCookies1.push(this.sumCookies);
+
                           }},
                 render: function () {
                      let divE1 = document.getElementById('hour');
@@ -66,6 +68,7 @@ let tokyo = {
     cusHour: 0,
     cusHour1: [],
     cookiesHour: [],
+    sumCookies1:[],
     sumCookies: 0,
     cookies: 0,
     getCustomernumber: function (min, max) {
@@ -81,6 +84,7 @@ let tokyo = {
     this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
     this.cookiesHour.push (this.cookies);
     this.sumCookies=this.cookies+this.sumCookies;
+    this.sumCookies1.push(this.sumCookies);
 
               }},
     render: function () {
@@ -118,9 +122,9 @@ let dubai = {
     hourWork : ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'],
     cusHour: 0,
     cusHour1: [],
-
     cookiesHour: [],
     sumCookies: 0,
+    sumCookies1:[],
     cookies: 0,
     getCustomernumber: function (min, max) {
         min = Math.ceil(min);
@@ -135,7 +139,8 @@ let dubai = {
                 this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
                 this.cookiesHour.push (this.cookies);
                 this.sumCookies=this.cookies+this.sumCookies;
-            
+                this.sumCookies1.push(this.sumCookies);
+
                           }},
                 render: function () {
                      let divE1 = document.getElementById('hour');
@@ -172,9 +177,9 @@ let paris = {
     hourWork : ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'],
     cusHour: 0,
     cusHour1: [],
-
     cookiesHour: [],
     sumCookies: 0,
+sumCookies1:[],
     cookies: 0,
     getCustomernumber: function (min, max) {
         min = Math.ceil(min);
@@ -189,7 +194,8 @@ let paris = {
                 this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
                 this.cookiesHour.push (this.cookies);
                 this.sumCookies=this.cookies+this.sumCookies;
-            
+                this.sumCookies1.push(this.sumCookies);
+
                           }},
                 render: function () {
                      let divE1 = document.getElementById('hour');
@@ -223,12 +229,12 @@ let lima = {
     minCus: 2,
     maxCus: 16,
     cusHour1: [],
-
     avgCookiecus: 4.6,
     hourWork : ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'],
     cusHour: 0,
     cookiesHour: [],
     sumCookies: 0,
+    sumCookies1:[],
     cookies: 0,
     getCustomernumber: function (min, max) {
         min = Math.ceil(min);
@@ -243,7 +249,8 @@ let lima = {
                 this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
                 this.cookiesHour.push (this.cookies);
                 this.sumCookies=this.cookies+this.sumCookies;
-            
+                this.sumCookies1.push(this.sumCookies);
+
                           }},
                 render: function () {
                      let divE1 = document.getElementById('hour');
