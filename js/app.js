@@ -6,7 +6,6 @@ let table1 = document.createElement('table');
 div1.appendChild(table1);
 let location1=[];
 let  totalPerhour =0;
-let finaltotalHour=[];
 let cookiesHourfinal=[];
 
 let header= function ()
@@ -17,11 +16,11 @@ let header= function ()
     tableHeader.appendChild(th1);
     th1.textContent ='cities' ;
     for (let i=0; i<hourWork.length;i++){
-    let th1 = document.createElement('td');
+    let th1 = document.createElement('th');
     tableHeader.appendChild(th1);
     th1.textContent =`${hourWork[i]}` ;
 }
-    let th5 = document.createElement('td');
+    let th5 = document.createElement('th');
     tableHeader.appendChild(th5);
     th5.textContent ='Daily Location Total' ;
         
@@ -40,7 +39,7 @@ function City (location,minCus,maxCus,avgCookiecus,hourWork){
   this.sumCookies1=[];
   this.sumCookies=0;
   this.cookies= 0;
-  location1.push(location);
+  location1.push(this);
 
 }
 City.prototype.getCustomernumber= function (min, max) {
@@ -55,7 +54,6 @@ City.prototype.sellcookies= function() {
   this.cusHour1.push(this.cusHour);
   this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
   this.cookiesHour.push (this.cookies);
-  cookiesHourfinal.push(this.cookies);
   this.sumCookies=this.cookies+this.sumCookies;
   this.sumCookies1.push(this.sumCookies);
   }
@@ -78,29 +76,28 @@ td7.textContent =` ${this.cookiesHour[i]} `;
 }
 
 let footer = function (){
-   for (let i=0; i<hourWork.length;i++) {
-    for (let i=0; i<location1.length;i++)
-{    
-  totalPerhour =cookiesHourfinal[i]+totalPerhour;
-
-   }
-   finaltotalHour.push(totalPerhour);
-  }
-   let tr6 = document.createElement('tr');
+  let tr6 = document.createElement('tr');
    table1.appendChild(tr6);
-   let td6 =document.createElement('td');
-   tr6.appendChild(td6);
-   td6.textContent= (`Total`);
-   for(let i=0; i<hourWork.length;i++){
-      let td9=document.createElement('td');
-      tr6.appendChild(td9);
-      td9.textContent=`${finaltotalHour[i]}`;
+   let th6 =document.createElement('th');
+   tr6.appendChild(th6);
+   th6.textContent= (`Total`);
 
-    }
-   let td9=document.createElement('td');
-   tr6.appendChild(td9);
-   td9.textContent=``;
+  let totaloftotal=0;
+   for (let i=0; i<hourWork.length;i++) {
+  let alltotal =0;
+    for (let j=0; j<location1.length ; j++)
+{alltotal+= location1[j].cookiesHour[i];
+totaloftotal+= location1[j].cookiesHour[i];
   }
+  let th9=document.createElement('th');
+  tr6.appendChild(th9);
+  th9.textContent=`${alltotal}`;
+  }
+  let th9=document.createElement('th');
+  tr6.appendChild(th9);
+  th9.textContent=`${totaloftotal}`;
+    
+}   
 
       let seattle = new City ('Seattle',23,65,6.3,hourWork);
       seattle.getCustomernumber(23,65);
