@@ -12,7 +12,9 @@ p {
 font-family: 'Times New Roman', Times, serif;
 color: tomato;
 }
-main {
-    background-color: burlywood;
 
+table,td,th{
+    margin: auto;
+color: black;
+border: black solid 2px;
 }

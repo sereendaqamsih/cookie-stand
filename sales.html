@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Sales</title>
 </head>
+
 <body>
     <header>
     </header>
     <main>
         <div id="location"></div>
         <div id="hour"></div>
+        <form action="" id="citiesform">
+<fieldset>
+   <!-- location,minCus,maxCus,avgCookiecus,hourWork-->
+   <legend>adding a branch</legend>
+   <label for="location">Branch city</label>
+    <input id="location" name="location" type="text" placeholder="location" />
+    <label for="minCus">Minimum customer per hour</label>
+    <input id="minCus" name="minCus" type="number" placeholder="minCus" />
+    <label for="maxCus">Maximum customer per hour</label>
+    <input id="maxCus" name="maxCus" type="number" placeholder="maxCus" />
+    <label for="avgCookiecus">Average cookies per hour</label>
+    <input id="avgCookiecus" name="avgCookiecus" type="text" placeholder="avgCookiecus" />
+    
+    
+          <input type="submit" value="Addbranch" />
+
+</fieldset>
+
+        </form>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     
 </body>
 <script src="js/app.js"></script>
