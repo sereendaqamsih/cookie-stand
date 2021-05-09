@@ -11,20 +11,4 @@ Reflections and Comments
 Consider including the answers to your daily journal and submission questions here
 This is also a good place to reflect on the tools and resources used and learned
 
- h1 {
-    font-family: 'Krona One', sans-serif;
-    color:black;
-}
-
-div {
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown  ;
-}
-
-p {
-font-family: 'Times New Roman', Times, serif;
-color: tomato;
-}
-main {
-    background-color: burlywood;
 
