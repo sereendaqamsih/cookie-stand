@@ -1,0 +1,116 @@
+body {
+    background-color: beige;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    font-family: 'Itim', cursive;    color:brown;
+    text-align: center;
+  }
+   
+  table,td {
+    border: 1px solid black;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+}  
+nav ul {
+    position: relative;
+  }
+header nav {
+    color: white;
+    background-color:brown;
+    padding: 10px;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 250px;
+}
+#logo
+ {
+width:200px;
+position: absolute;
+}
+#family {
+display: block;
+width:500px;
+margin: auto;
+margin-top: 30px;
+border-radius: 50%;}
+
+#win {
+    color: lightcoral;
+    text-align: center;
+    font-weight: lighter;
+}
+span {
+    color: lightsalmon;
+    font-weight: bolder;
+    font-size: 40px;
+}
+#tools {
+    display: block;
+    width:500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+
+}
+h4 {
+    color: lightcoral;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+}
+#shirt {
+    display: block;
+    width:500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+
+}
+#branches{
+    color: lightcoral;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+
+}
+#cities{
+    color: lightcoral;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+}
+#fish{
+    display: block;
+    width:500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+
+}
+
+footer{
+    text-align-last: left;
+    font-size: 15px;
+    color: maroon;
+}
+table{
+    margin: auto;
+    margin-top: 30px;
+
+}
+address {
+    font-weight: lighter;
+    font-size: x-small;
+}
+
