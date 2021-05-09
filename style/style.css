@@ -48,6 +48,11 @@ td,th
   border: 1px solid black;
 }
 
+table,td,th{
+    margin: auto;
+color: black;
+border: black solid 2px;
+}
     float: inline-start;
     width: 350px;
 }
