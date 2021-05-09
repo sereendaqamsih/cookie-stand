@@ -134,6 +134,8 @@ branchForm.addEventListener('submit', Addbranch);
 
 function Addbranch(event) {
     event.preventDefault();
+    table1.removeChild(table1.lastElementChild);
+
     let location = event.target.location.value;
     let minCus = event.target.minCus.value;
     let maxCus = event.target.maxCus.value;
@@ -149,7 +151,6 @@ newfooter();
 let newfooter = function (){
     let tr6 = document.createElement('tr');
      table1.appendChild(tr6);
-
      let th6 =document.createElement('th');
      tr6.appendChild(th6);
      th6.textContent= (`Total`);
@@ -168,9 +169,11 @@ let newfooter = function (){
     let th9=document.createElement('th');
     tr6.appendChild(th9);
     th9.textContent=`${totaloftotal}`;
+    let salesFoot = document.getElementById("sales-foot");
+    
+    }
       
-  }   
-
+  
 
 
 
