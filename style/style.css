@@ -1,0 +1,62 @@
+
+
+body {
+  background-color: beige;
+    background-color: beige;
+}
+
+
+
+h1 {
+  font-family: 'Itim', cursive;    color:brown;
+  text-align: center;
+}
+
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  color: indianred  ;
+  margin: 50px;
+  font-size: large;
+  }
+
+    font-family: 'Itim', cursive;    color:brown;
+    text-align: center;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: indianred  ;
+    margin: 50px;
+    font-size: large;
+    }
+
+p {
+font-family: 'Times New Roman', Times, serif;
+color: lightcoral;
+}    
+img {
+  float: inline-start;
+  width: 350px;
+}
+li {
+  font-size: medium;
+  color: tomato;
+}
+table,
+td,th
+ {
+  border: 1px solid black;
+}
+
+table,td,th{
+    margin: auto;
+color: black;
+border: black solid 2px;
+}
+    float: inline-start;
+    width: 350px;
+}
+li {
+    font-size: medium;
+    color: tomato;
+}
