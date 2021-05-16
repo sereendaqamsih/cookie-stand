@@ -11,6 +11,4 @@ Reflections and Comments
 Consider including the answers to your daily journal and submission questions here
 This is also a good place to reflect on the tools and resources used and learned
 
- for (let i=0;i<cookiesHour.length;i++){
-       let sum = cookiesHour[i]+ sumvariable;
-let sumvariable=cookiesHour[i]
+
