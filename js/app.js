@@ -6,10 +6,6 @@ let table1 = document.createElement('table');
 div1.appendChild(table1);
 let location1=[];
 let  totalPerhour =0;
-<<<<<<< HEAD
-=======
-let finaltotalHour=[];
->>>>>>> main
 let cookiesHourfinal=[];
 
 let header= function ()
@@ -20,49 +16,29 @@ let header= function ()
     tableHeader.appendChild(th1);
     th1.textContent ='cities' ;
     for (let i=0; i<hourWork.length;i++){
-<<<<<<< HEAD
     let th1 = document.createElement('th');
     tableHeader.appendChild(th1);
     th1.textContent =`${hourWork[i]}` ;
 }
     let th5 = document.createElement('th');
-=======
-    let th1 = document.createElement('td');
-    tableHeader.appendChild(th1);
-    th1.textContent =`${hourWork[i]}` ;
-}
-    let th5 = document.createElement('td');
->>>>>>> main
     tableHeader.appendChild(th5);
     th5.textContent ='Daily Location Total' ;
         
 }
 header();
 
-<<<<<<< HEAD
 function City (location,minCus,maxCus,avgCookiecus){
-=======
-function City (location,minCus,maxCus,avgCookiecus,hourWork){
->>>>>>> main
   this.location=location;
   this.minCus=minCus;
   this.maxCus=maxCus;
   this.avgCookiecus=avgCookiecus;
-<<<<<<< HEAD
-=======
-  this.hourWork=hourWork;
->>>>>>> main
   this.cusHour1= [];
   this.cusHour= 0;
   this.cookiesHour= [];
   this.sumCookies1=[];
   this.sumCookies=0;
   this.cookies= 0;
-<<<<<<< HEAD
   location1.push(this);
-=======
-  location1.push(location);
->>>>>>> main
 
 }
 City.prototype.getCustomernumber= function (min, max) {
@@ -72,16 +48,11 @@ City.prototype.getCustomernumber= function (min, max) {
   this.cusHour1.push(this.cusHour);
    }
 City.prototype.sellcookies= function() { 
-<<<<<<< HEAD
   for ( let i=0 ; i< hourWork.length ;i++ ){
-=======
-  for ( let i=0 ; i< this.hourWork.length ;i++ ){
->>>>>>> main
   this.getCustomernumber(this.minCus,this.maxCus);
   this.cusHour1.push(this.cusHour);
   this.cookies=Math.ceil(this.avgCookiecus*this.cusHour);
   this.cookiesHour.push (this.cookies);
-<<<<<<< HEAD
   this.sumCookies=this.cookies+this.sumCookies;
   this.sumCookies1.push(this.sumCookies);
   }
@@ -201,82 +172,3 @@ let newfooter = function (){
     let salesFoot = document.getElementById("sales-foot");
     
     }
-=======
-  cookiesHourfinal.push(this.cookies);
-  this.sumCookies=this.cookies+this.sumCookies;
-  this.sumCookies1.push(this.sumCookies);
-  }
-/*for (let i=0;i<location1.length;i++){
-cookiesHourfinal[i]=this.cookiesHour[i];
-}*/
-
-}
-City.prototype.render= function () { 
-let tr1 = document.createElement('tr');
-table1.appendChild(tr1);
-let td1 =document.createElement('td');
-tr1.appendChild(td1);
-td1.textContent= (` ${this.location}`);
-for ( let i=0; i<hourWork.length;i++){
-let td7 = document.createElement('td');
-tr1.appendChild(td7);
-td7.textContent =` ${this.cookiesHour[i]} `;
- }
- let td8 =document.createElement('td');
- tr1.appendChild(td8);
- td8.textContent=`${this.sumCookies}`
-}
-
-let footer = function (){
-   for (let i=0; i<hourWork.length;i++) {
-    for (let i=0; i<location1.length;i++)
-{    
-  totalPerhour =cookiesHourfinal[i]+totalPerhour;
-
-   }
-   finaltotalHour.push(totalPerhour);
-  }
-
-    let tr6 = document.createElement('tr');
-    table1.appendChild(tr6);
-    let td6 =document.createElement('td');
-    tr6.appendChild(td6);
-    td6.textContent= (`Total`);
-    for(let i=0; i<hourWork.length;i++){
-      let td9=document.createElement('td');
-      tr6.appendChild(td9);
-      td9.textContent=`${finaltotalHour[i]}`;
-
-    }
-    let td9=document.createElement('td');
-      tr6.appendChild(td9);
-      td9.textContent=``;
-  }
-
-      let seattle = new City ('Seattle',23,65,6.3,hourWork);
-      seattle.getCustomernumber(23,65);
-      seattle.sellcookies();
-      seattle.render();
-      
-      let tokyo = new City ('Tokyo',3,24,1.2,hourWork);
-      tokyo.getCustomernumber(3,24);
-      tokyo.sellcookies();
-      tokyo.render();
-      
-      let dubai = new City ('Dubai',11,38,3.7,hourWork);
-      dubai.getCustomernumber(11,38);
-      dubai.sellcookies();
-      dubai.render();
-      
-      let paris = new City ('Paris',20,38,2.3,hourWork);
-      paris.getCustomernumber(20,38);
-      paris.sellcookies();
-      paris.render();
-      
-      let lima = new City ('Lima',2,16,4.6,hourWork);
-      lima.getCustomernumber(2,16);
-      lima.sellcookies();
-      lima.render();
-
-footer();
->>>>>>> main

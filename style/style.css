@@ -17,7 +17,7 @@ div {
   color: indianred  ;
   margin: 50px;
   font-size: large;
-  }
+  
 
     font-family: 'Itim', cursive;    color:brown;
     text-align: center;
@@ -52,7 +52,7 @@ table,td,th{
     margin: auto;
 color: black;
 border: black solid 2px;
-}
+
     float: inline-start;
     width: 350px;
 }
